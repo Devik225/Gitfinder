@@ -1,0 +1,36 @@
+.search {
+  width: 21rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBox:focus {
+  outline: none;
+}
+
+.searchBox {
+  width: 12.5rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #585858;
+  padding: 0 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.searchSubmit {
+  width: 6.5rem;
+  color: white;
+  cursor: pointer;
+  background-color: #268741;
+  border: 1px solid #2a9048;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

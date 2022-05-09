@@ -1,0 +1,13 @@
+.profileInfo {
+  display: flex;
+  margin: 15px 0;
+}
+.profileInfoIcon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.profileInfoQuery {
+  font-size: 14px;
+  font-weight: 500;
+}

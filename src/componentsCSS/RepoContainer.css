@@ -1,0 +1,15 @@
+.repoHeading {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.repoContainer {
+}
+.repoContainerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+.pagination{
+  margin-top: 15px;
+}
