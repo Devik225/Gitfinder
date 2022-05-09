@@ -10,7 +10,6 @@ function RepoContainer() {
 
   function handlePageChange(page) {
     setCurrentPage(page);
-    console.log(currentPage);
   }
 
   return (

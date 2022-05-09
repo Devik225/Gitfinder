@@ -7,25 +7,31 @@ import mail from '../images/mail.svg'
 import repos from '../images/repos.svg'
 import company from '../images/company.svg'
 
-function Profile() {
+function Profile(props) {
+  // let [name, bio, followers, following, email, repos, location, company] = props;
+  let peopleQuery = props.followers +  ' Followers  |  ' + props.following + ' Following';
+  let emailQuery = 'Email - ' + props.email;
+  let reposQuery = 'Public repos - ' + props.repos;
+  let locationQuery = 'Location - ' + props.location;
+  let companyQuery = 'Company - ' + props.company;
   return (
     <div className='profile'>
       <div>
         <div className='profileImg'>
-        <img width={'100%'} src='https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIwemVhbGFuZCUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80'></img>
+        <img width={'100%'} src={props.image}></img>
         </div>
         <div className='profileName'>
-          Devik
+          {props.name}
         </div>
         <div className='bio'>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          {props.bio}
         </div>
         <hr/>
-        <ProfileInfo icon={people} query='10 Followers  |  20 Following'/>
-        <ProfileInfo icon={mail} query='Email - '/>
-        <ProfileInfo icon={repos} query='Public repos - '/>
-        <ProfileInfo icon={location} query='Location - '/>
-        <ProfileInfo icon={company} query='Company - '/>
+        <ProfileInfo icon={people} query = {peopleQuery} />
+        <ProfileInfo icon={mail} query = {emailQuery}/>
+        <ProfileInfo icon={repos} query = {reposQuery}/>
+        <ProfileInfo icon={location} query = {locationQuery}/>
+        <ProfileInfo icon={company} query = {companyQuery}/>
       </div>
     </div>
   )
