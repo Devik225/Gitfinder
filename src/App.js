@@ -7,8 +7,13 @@ import RepoContainer from './components/RepoContainer';
 
 function App() {
 
-  const [name, setName] = useState('devik225');
-  const [data, setData] = useState('');
+  let [data, setData] = useState('');
+  let [repos, setRepos] = useState('');
+
+  useEffect(() => {
+    updateRepo(1);
+  }, [data])
+  
 
   let update = async(id)=>{
     let url = 'https://api.github.com/users/' + id;
@@ -17,11 +22,20 @@ function App() {
     await setData(values);
   }
 
+  let updateRepo = async(id)=>{
+    let url = 'https://api.github.com/users/'+ data.login +'/repos?page='+ id +'&per_page=6';
+    let response = await fetch(url);
+    let values = await response.json();
+    await setRepos(values);
+  }
+
   return (
     <div className="main">
 
     {/* Header Section */}
-      <Header update={update}/>
+      <Header update={update}
+        updateRepo={updateRepo}
+      />
       <div className='container'>
       <div></div>
 
@@ -38,7 +52,10 @@ function App() {
         />
 
         {/* Repositories Section */}
-        <RepoContainer/>
+        <RepoContainer updateRepo={updateRepo}
+          data = {repos}
+          pages = {data.public_repos}
+        />
         <div></div>
       </div>
     </div>

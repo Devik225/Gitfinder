@@ -5,11 +5,11 @@ function Search(props) {
 
   const[name, setName]=useState('');
 
-  const handleSubmit = e=>{
+  const handleSubmit = async e=>{
     e.preventDefault();
     e.target.reset();
-    console.log(name);
-    props.update(name);
+    await props.update(name);
+    await props.updateRepo(1);
   }
 
   const handleChange = e=>{

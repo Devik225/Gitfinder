@@ -8,7 +8,7 @@ function Header(props) {
         <div></div>
         <div className='headerContent'>
         <div className='Logo'>Git-Finder</div>
-        <Search update={props.update}/>
+        <Search update={props.update} updateRepo={props.updateRepo}/>
         </div>
         <div></div>
     </div>
