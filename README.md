@@ -4,7 +4,7 @@
 
 <!-- ![Screenshot (1180)](https://user-images.githubusercontent.com/67371806/167638303-7ec522b9-4ddb-4e47-a9b7-b35ed08e9f7a.png) -->
 <h1 align="center">Git-Finder</h1>
-  <h4 align='center'><a href="https://github.com/Devik225/Gitfinder">click here to browse the actual web app</a></h4>
+  <h4 align='center'><a href="https://gitfinder25.netlify.app/">click here to browse the actual web app</a></h4>
   <br>
 
 </h1>
