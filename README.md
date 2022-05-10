@@ -1,3 +1,4 @@
+<h1 align="center">Git-Finder</h1>
 <h1 align="center">
   <br>
   <a href="https://github.com/Devik225/Gitfinder">
