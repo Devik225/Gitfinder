@@ -21,9 +21,10 @@
 ## Targets Achieved
 
 - [x] Built on Reactjs.
-- [x] Server side pagination executes when new data is required.
+- [x] Server-side pagination executed for pagination.
 - [x] User not found page implemented.  
 - [x] Pre-loader works smoothly.  
+- [x] From here user can navigate to Profiles and Repositories of the searched user.  
 
 
 ## Installation on your Local Machine
