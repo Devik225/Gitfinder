@@ -1,11 +1,10 @@
-<h1 align="center">Git-Finder</h1>
+
 <h1 align="center">
-  <br>
-  <a href="https://github.com/Devik225/Gitfinder">
+<!--   <a href="https://github.com/Devik225/Gitfinder"> -->
 <!-- ![Screenshot (1179)](https://user-images.githubusercontent.com/67371806/167638082-958e7bde-8db7-45c8-9710-8a4ce1c7793f.png) -->
 
 <!-- ![Screenshot (1180)](https://user-images.githubusercontent.com/67371806/167638303-7ec522b9-4ddb-4e47-a9b7-b35ed08e9f7a.png) -->
-
+<h1 align="center">Git-Finder</h1>
   <br>
 
 </h1>
