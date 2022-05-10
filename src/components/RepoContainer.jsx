@@ -21,7 +21,7 @@ function RepoContainer(props) {
     <div className='repoContainer'>
     <div className='repoHeading'>Repositories</div>
     <div className='repoContainerContent'>
-    {Object.keys(data).map(v=><Card/>)}
+    {Array.from(data).map(val=><Card link={val.html_url} name={val.name} description={val.description} language={val.language} fork={val.forks_count}/>)}
       </div>
       <div className='pagination'>
       <Pagination

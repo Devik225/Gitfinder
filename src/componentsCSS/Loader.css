@@ -1,0 +1,22 @@
+.loader{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0D1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.gitLoader{
+    width: 20%;
+}
+
+@media (orientation : portrait) {
+    .gitLoader{
+        width: 40%;
+    }
+}

@@ -1,5 +1,4 @@
 .profile {
-  /* margin-left: 180px; */
   width: 75%;
 }
 
@@ -18,11 +17,39 @@
   font-size: 32px;
   font-weight: 600;
   margin-top: 5px;
+  display: flex;
+  align-items: center;
 }
+
+.profileName > a > img  {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
 
 .bio {
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: 300;
   text-align: justify;
+}
+
+@media (orientation : portrait) {
+  .profile {
+    width: 90%;
+    padding: 0 4.5%;
+  }
+  .profileImg {
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
+  .profileName{
+    width: fit-content;
+    margin: auto;
+    
+  }
+  .bio {
+    font-size: 16px;
+  }
 }

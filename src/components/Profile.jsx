@@ -6,6 +6,7 @@ import location from '../images/location.svg'
 import mail from '../images/mail.svg'
 import repos from '../images/repos.svg'
 import company from '../images/company.svg'
+import github from '../images/github.svg'
 
 function Profile(props) {
   // let [name, bio, followers, following, email, repos, location, company] = props;
@@ -22,6 +23,7 @@ function Profile(props) {
         </div>
         <div className='profileName'>
           {props.name}
+          <a target='_blank' href={props.link}><img src={github}/></a>
         </div>
         <div className='bio'>
           {props.bio}
